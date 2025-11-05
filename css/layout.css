@@ -20,6 +20,7 @@ main {
   grid-template-rows: min-content min-content min-content 1fr min-content;
 }
 /* LAYOUT FOR HEADER AND FOOTER */
+
 footer {
   display: grid;
   gap: 10px;
