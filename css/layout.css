@@ -114,6 +114,7 @@ form {
   display: grid;
   gap: 1rlh;
   padding: 1rlh;
+  width: 350px;
 
   .form-group {
     display: grid;
