@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -53,6 +54,7 @@
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
+
         <article class="daily_card">
           <img src="spørgsmålstegn.png" alt="spørgsmålstegn" />
           <div class="daily_text">
@@ -62,6 +64,7 @@
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card">
           <h3>Koffeinfrakolaps i hjemmet</h3>
@@ -70,21 +73,97 @@
             over hele landet...
           </p>
           <img src="koffeinfrakolaps.png" alt="koffeinfrakolaps" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="news_popover1">
+            Læs mere
+          </button>
         </article>
+
+        <article popover id="news_popover1">
+          <h2>Koffeinfrakolaps i hjemmet</h2>
+          <p>
+            Flere hundrede borgere er ramt af pludseligt maskinsvigt i køkkener
+            over hele landet.
+          </p>
+
+          <p>
+            Rapporter beskriver, at kaffemaskiner nægter at reagere — selv efter
+            gentagne tryk på startknappen og desperate forsøg på afkalkning.
+          </p>
+          <p>
+            Øjenvidner fortæller om husstande i opløsning: En mor, der stirrede
+            ned i et tomt krus i syv minutter, en studerende, der forsøgte at
+            hælde vand direkte på kaffefilteret, og en far, der overvejer at
+            drikke instantkaffe “bare for følelsen.”
+          </p>
+          <p>
+            Beredskabet råder nu alle borgere til at bevare roen og ikke tale
+            med familiemedlemmer, før niveauet af koffein i blodet er
+            genetableret.
+          </p>
+        </article>
+
         <article class="news_card">
           <h3>Kaffeoprør ved supermarkedet</h3>
           <p>Hundredvis af borgere er samlet udenfor discountkæder...</p>
           <img src="kaffeoprør_i_supermarked.png" alt="kaffeoprør" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="news_popover2">
+            Læs mere
+          </button>
         </article>
+        <article popover id="news_popover2">
+          <h2>Kaffeoprør ved supermarkedet</h2>
+          <p>
+            Hundredvis af borgere er samlet udenfor discountkæder over hele
+            landet bevæbnet med termokopper og desperat håb.
+          </p>
+          <p>
+            Politiet har oprettet midlertidige afspærringer foran kaffehylderne,
+            men situationen beskrives som ustabil og søvnig. Nogle har slået
+            telte op i parkeringspladserne og udveksler kaffeerstatninger i
+            smug: frysetørret pulver, chokolade, energidrik.
+          </p>
+          <p>
+            Vidner rapporterer, at folk står i kø, selvom dørene er låst –
+            ubevægelige, stirrende, som om de venter på et mirakel.
+          </p>
+          <p>
+            “Det føles som Black Friday, men uden energi,” fortæller en
+            øjenvidne, mens han ryster på hænderne.
+          </p>
+        </article>
+
         <article class="news_card">
           <h3>Overtænkerne spreder sig</h3>
           <p>
             Psykologer advarer: Fraværet af koffein har åbnet en ny epidemi...
           </p>
-
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="news_popover3">
+            Læs mere
+          </button>
+        </article>
+        <article popover id="news_popover3">
+          <h2>Overtænkerne spreder sig</h2>
+          <p>
+            Psykologer advarer om en ny mental krise: manglen på kaffe har
+            udløst massiv overtænkning i befolkningen.
+          </p>
+          <p>
+            Flere borgere melder om nætter brugt på at stirre ind i væggen, mens
+            de gennemgår hele deres liv – baglæns.
+          </p>
+          <p>
+            Vidner beskriver mennesker, der står fastfrosset i køkkener og
+            hvisker: “Hvad hvis jeg aldrig har truffet et valg… rigtigt?”
+          </p>
+          <p>
+            Symptomerne inkluderer rastløshed, overanalyse og en ukontrollerbar
+            trang til at skrive lange beskeder, man aldrig sender.
+          </p>
+          <h3>Eksperterne advarer</h3>
+          <p>
+            “Hvis du begynder at overveje, om du overvejer – luk vinduet, drik
+            vand, og tænk på ingenting. Det hjælper… måske.”
+          </p>
         </article>
       </section>
     </main>
