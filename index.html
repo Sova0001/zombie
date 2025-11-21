@@ -11,14 +11,19 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="icon" type="image/favicon" href="favicon_kaffekrisen.svg2.svg" />
     <title>Emergency Site</title>
   </head>
   <body id="frontpage">
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> KAFFEKRISEN </a>
+          <a href="index.html">
+            <img src="kaffekrisen_logo.svg" alt="logo" />
+          </a>
+          <button id="toggle">Dark mode</button>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -50,18 +55,51 @@
               Når kaffen udebliver falder civilisationen fra hinanden. Her er
               symptomerne du skal være opmærksom på.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary href="" class="cta_btn">Se mere</summary>
+              <div>
+                Når kaffen udebliver falder civilisationen fra hinanden. Her er
+                symptomerne du skal være opmærksom på: Efter få minutter uden
+                koffein begynder transformationen - stemmen bliver hæs,
+                kropsholdningen falder sammen og morgenkåben bliver uniform.
+                Gennemrodning af køkkent, søgen i supermarked, men når de finder
+                kaffen, er det allerede for sent.
+              </div>
+            </details>
           </div>
         </article>
+
         <article class="daily_card">
           <img src="spørgsmålstegn.png" alt="spørgsmålstegn" />
           <div class="daily_text">
-            <h2>Oplever du dette i hjemmet?</h2>
-            <p>Kontakt os hurtigst muligt ved at indberette.</p>
-            <a href="" class="cta_btn">Indberet her</a>
+            <h2>Hvad gør du ved kaffemangel</h2>
+            <p>
+              Kaffemangel kan ramme pludseligt og uden forvarsel. Når det sker,
+              er det vigtigt at handle hurtigt og undgå panik (så godt som
+              muligt). Følg disse trin for at holde både dig selv og dine
+              omgivelser nogenlunde funktionelle.
+            </p>
+            <details>
+              <summary href="" class="cta_btn">Se mere</summary>
+              <div>
+                Når kaffemanglen rammer, er det vigtigt at holde hovedet koldt;
+                panik hjælper ingen, selvom det føles naturligt uden koffein.
+                Gennemgå dine skjulte depoter ved at kigge i skabe, tasker,
+                skuffer og “glemte” glas — selv små rester kan være livsvigtige.
+                Observer hjemmet nøje: Er nogen rastløse, mumlende eller
+                stirrende mod kaffemaskinen, er det et tegn på, at du skal
+                reagere hurtigt. Undgå improviserede bryggemetoder, for varmt
+                vand på bønner eller kaffe gennem viskestykker fører kun til
+                sorg. Opsøg i stedet en person, der allerede har fået kaffe; de
+                fungerer som midlertidige guider i den mentale tåge. Og husk at
+                indberette situationen — jo hurtigere krisen bliver meldt, desto
+                bedre kan du forebygge total morgenkollaps.
+              </div>
+            </details>
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card">
           <h3>Koffeinfrakolaps i hjemmet</h3>
@@ -70,21 +108,100 @@
             over hele landet...
           </p>
           <img src="koffeinfrakolaps.png" alt="koffeinfrakolaps" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="news_popover1">
+            Læs mere
+          </button>
+
+          <article popover id="news_popover1">
+            <h2>Koffeinfrakolaps i hjemmet</h2>
+            <p>
+              Flere hundrede borgere er ramt af pludseligt maskinsvigt i
+              køkkener over hele landet.
+            </p>
+
+            <p>
+              Rapporter beskriver, at kaffemaskiner nægter at reagere — selv
+              efter gentagne tryk på startknappen og desperate forsøg på
+              afkalkning.
+            </p>
+            <p>
+              Øjenvidner fortæller om husstande i opløsning: En mor, der
+              stirrede ned i et tomt krus i syv minutter, en studerende, der
+              forsøgte at hælde vand direkte på kaffefilteret, og en far, der
+              overvejer at drikke instantkaffe “bare for følelsen.”
+            </p>
+            <p>
+              Beredskabet råder nu alle borgere til at bevare roen og ikke tale
+              med familiemedlemmer, før niveauet af koffein i blodet er
+              genetableret.
+            </p>
+          </article>
         </article>
+
         <article class="news_card">
           <h3>Kaffeoprør ved supermarkedet</h3>
           <p>Hundredvis af borgere er samlet udenfor discountkæder...</p>
           <img src="kaffeoprør_i_supermarked.png" alt="kaffeoprør" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="news_popover2">
+            Læs mere
+          </button>
+          <article popover id="news_popover2">
+            <h2>Kaffeoprør ved supermarkedet</h2>
+            <p>
+              Hundredvis af borgere er samlet udenfor discountkæder over hele
+              landet bevæbnet med termokopper og desperat håb.
+            </p>
+            <p>
+              Politiet har oprettet midlertidige afspærringer foran
+              kaffehylderne, men situationen beskrives som ustabil og søvnig.
+              Nogle har slået telte op i parkeringspladserne og udveksler
+              kaffeerstatninger i smug: frysetørret pulver, chokolade,
+              energidrik.
+            </p>
+            <p>
+              Vidner rapporterer, at folk står i kø, selvom dørene er låst –
+              ubevægelige, stirrende, som om de venter på et mirakel.
+            </p>
+            <p>
+              “Det føles som Black Friday, men uden energi,” fortæller en
+              øjenvidne, mens han ryster på hænderne.
+            </p>
+          </article>
         </article>
+
         <article class="news_card">
           <h3>Overtænkerne spreder sig</h3>
           <p>
             Psykologer advarer: Fraværet af koffein har åbnet en ny epidemi...
           </p>
-
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="news_popover3">
+            Læs mere
+          </button>
+          <article popover id="news_popover3">
+            <h2>Overtænkerne spreder sig</h2>
+            <p>
+              Psykologer advarer om en ny mental krise: manglen på kaffe har
+              udløst massiv overtænkning i befolkningen.
+            </p>
+            <p>
+              Flere borgere melder om nætter brugt på at stirre ind i væggen,
+              mens de gennemgår hele deres liv – baglæns.
+            </p>
+            <p>
+              Vidner beskriver mennesker, der står fastfrosset i køkkener og
+              hvisker: “Hvad hvis jeg aldrig har truffet et valg… rigtigt?”
+            </p>
+            <p>
+              Symptomerne inkluderer rastløshed, overanalyse og en
+              ukontrollerbar trang til at skrive lange beskeder, man aldrig
+              sender.
+            </p>
+            <h3>Eksperterne advarer</h3>
+            <p>
+              “Hvis du begynder at overveje, om du overvejer – luk vinduet, drik
+              vand, og tænk på ingenting. Det hjælper… måske.”
+            </p>
+          </article>
         </article>
       </section>
     </main>
@@ -116,6 +233,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/dark.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
